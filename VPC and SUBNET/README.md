@@ -18,11 +18,18 @@ This guide outlines the steps to build a secure, high-availability network envir
 
 ### Step 2: Create the Subnets
 Create the following four subnets within photoshare-vpc:
-- Name Tag	       Availability Zone	 IPv4 CIDR Block	     Purpose
-- Public Subnet 1	  us-east-1a	      10.0.1.0/24	       Web Server & ALB
-- Private Subnet 1	  us-east-1a	      10.0.2.0/24	       Primary Database
-- Public Subnet 2	  us-east-1b	      10.0.3.0/24	       ALB Requirement
-- Private Subnet 2	  us-east-1b	      10.0.4.0/24	       DB Group Requirement
+- [Infrastructure Setup: PhotoSharing App VPC](#infrastructure-setup-photosharing-app-vpc)
+  - [Architecture Overview](#architecture-overview)
+  - [Deployment Steps](#deployment-steps)
+    - [Step 1: Build the VPC](#step-1-build-the-vpc)
+    - [Step 2: Create the Subnets](#step-2-create-the-subnets)
+    - [Step 3: Add the Internet Gateway](#step-3-add-the-internet-gateway)
+    - [Step 4: Configure Routing](#step-4-configure-routing)
+      - [1. Create Route Table:](#1-create-route-table)
+      - [2. Add Internet Access:](#2-add-internet-access)
+      - [3. Associate Public Subnets:](#3-associate-public-subnets)
+  - [Post-Setup Checklist](#post-setup-checklist)
+
 
 ### Step 3: Add the Internet Gateway
 - Go to Internet Gateways > Create internet gateway.
