@@ -24,12 +24,12 @@ Go to the Lambda Dashboard and click Create function.
 ### Step 3: Update Function Code
 
 - In your terminal, run the following command to view the source code:
-- 
+  
 - cat lambda_handler.py
 - Copy the entire output of the command.
-- 
+  
 - In the AWS Console, go to the Code tab and paste the code you just copied.
-- 
+  
 - Click Deploy to save changes.
 
 ### Step 4: Configure Environment Variables
