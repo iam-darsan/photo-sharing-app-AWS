@@ -20,7 +20,7 @@ Secret type: Other type of secret
 - Key: dbname | Value: (Paste your Initial database name here)
 - Encryption key: aws/secretsmanager (Default)
 
-Step 2: Name and Create
+### Step 2: Name and Create
 
 - Secret name: photoshare/db/credentials
 - Description: Database credentials for PhotoSharing App
@@ -28,5 +28,5 @@ Step 2: Name and Create
 - Click Store.
 
 ## Note:
-Is the secret photoshare/db/credentials created?
-Is the secret encrypted using the aws/secretsmanager key?
+- Is the secret photoshare/db/credentials created?
+- Is the secret encrypted using the aws/secretsmanager key?
